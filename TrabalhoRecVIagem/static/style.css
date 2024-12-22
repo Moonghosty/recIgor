@@ -1,0 +1,108 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: #0056b3;
+    margin-top: 20px;
+}
+
+/* Estilo da lista de viagens */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+li {
+    background: #fff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Estilo do formulário */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background: #0056b3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #004494;
+}
+
+/* Estilo para mensagens de erro */
+p {
+    text-align: center;
+}
+
+p[style="color: red;"] {
+    font-weight: bold;
+}
+
+/* Estilo para páginas de erro */
+.error-page {
+    text-align: center;
+    padding: 50px;
+}
+
+.error-page h1 {
+    font-size: 3em;
+    color: #b30000;
+}
+
+.error-page p {
+    font-size: 1.2em;
+}
+
+.error-page a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.error-page a:hover {
+    text-decoration: underline;
+}

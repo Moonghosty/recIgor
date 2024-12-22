@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Diário de Viagens</title>
+</head>
+<body>
+    <h1>Diário de Viagens</h1>
+    <p>Total de viagens cadastradas: {{ total_viagens }}</p>
+    <ul>
+        {% for viagem in viagens %}
+        <li>
+            <h2>{{ viagem.destino }}</h2>
+            <p>Data: {{ viagem.data }}</p>
+            <p>Descrição: {{ viagem.descricao }}</p>
+            <p>Nota: {{ viagem.nota }}/5</p>
+        </li>
+        {% endfor %}
+    </ul>
+    <form method="POST" action="/limpar">
+        <button type="submit">Limpar Diário</button>
+    </form>
+</body>
+</html>
